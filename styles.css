@@ -1,14 +1,8 @@
-body{
-    width:100%;
+ body{
     height: fit-content;
     display:flex;
     flex-direction: column;
 }
-
-* {
-    box-sizing: border-box;
-}
-
 
 .logo{
     height: 55px;
@@ -78,7 +72,7 @@ p,a,h1{
 #edge_screen{
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 15px;    
     flex-wrap: wrap;
 }
 
@@ -183,6 +177,8 @@ p,a,h1{
     flex-direction: column;
     gap: 20px;
     padding: 25px;
+    align-items: center;
+    justify-content: center;
 }
 
 #main_note_text{
@@ -309,4 +305,39 @@ p,a,h1{
 #Company{
     padding-left: 25px;
     color: gray;
+}
+/*Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .body_cards {
+        flex-direction: column;
+    }
+
+    .body_text_title h1 {
+        font-size: 40px;
+    }
+
+    .sub_text p {
+        font-size: 16px;
+    }
+
+    #buttons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .body_text {
+        padding: 20px;
+    }
+
+    #main_note_text {
+        padding: 30px;
+    }
+
+    #header_menu,
+    #location_nav,
+    #buttons {
+        width: 100%;
+    }
 }
