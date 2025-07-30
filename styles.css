@@ -1,24 +1,23 @@
+body{
+    width:100%;
+    height: fit-content;
+    display:flex;
+    flex-direction: column;
+}
+
 * {
     box-sizing: border-box;
 }
 
 
-/* {
-      border: 2px solid red ;  
-} */
-
-body{
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-
+.logo{
+    height: 55px;
 }
 
-
-/* header */
-
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ul{
+    padding:0;
+    margin: 0;
+    list-style: none;
 }
 
 a{
@@ -26,66 +25,77 @@ a{
     color: black;
 }
 
-#header{
-    display: flex;
-    border-bottom: 2px solid gray ;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
-    width: 100%;
-    margin-bottom: 25px;
-}
-
-#header_menu{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.logo{
-    height:60px;
-}
-
-ul{
-    list-style: none;
-}
-
-li{
-    padding: 10px;
-    font-weight: 700;
+p,a,h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #top_nav{
     display: flex;
+    gap : 15px;
     flex-wrap: wrap;
+}
+
+#header_menu{
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+    gap: 25px;
+    width:fit-content;
+    flex-wrap: wrap;
+}
+
+#location_icon{
+    height:25px;
 }
 
 #location_nav{
     display: flex;
-    margin-left: 30%;
-    flex-wrap: wrap;
-}
-
-#location_icon {
-    height: 40px;
-    padding: 8px;
-    margin-top: 13px;
+    width:fit-content;
+    border: 1px solid;
+    align-items: center;
+    gap:5px;
 }
 
 #nav_store{
-    padding: 10px 3px 10px;
+    padding-top: 4px;
+    font-size: 12px;
+}
+
+.button{
+    border: 3px solid;
+    border-radius: 30px ;
+    padding: 10px;
+    width:fit-content;
 }
 
 #buttons{
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    border: 1px solid;
+    align-items: center;
+    width:fit-content;
 }
 
-#button_sign_in,
-#button_join_now{
-    padding: 15px;
-    border : 2px solid;
-    border-radius: 50px;
+#edge_screen{
+    border:1px solid;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#header{
+    border: 1px solid;
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+#top_nav li{
+    font-weight: 700;
 }
 
 #button_join_now{
@@ -113,37 +123,81 @@ li{
     background-color: rgb(33, 33, 33);
 }
 
-/* main */
+/* body */
 
-#main{
-    width: 100%;
+.body_text_title h1{
+    font-size: 80px;
 }
 
-.body_cards{
-    display: flex;
-    margin: 0px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
+.body_text_title{
+    border: 1px solid;
+    width:60%;
+    text-align: center;
 }
 
-.body_cards div{
-    width: 50%;
-    flex-shrink:10 ;
+.sub_text{
+    border: 1px solid;
+    width:50%;
+    text-align: center;
 }
 
-.body_image{
-    height:100%;
-    width: 100%;
+.sub_text p{
+    font-weight: 550;
+    font-size: 25px;
 }
 
 .body_text{
+    border: 1px solid red;
     background-color: rgb(32, 67, 32);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    padding: 80px;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.body_image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.body_cards{
+     border: 5px solid blue;
+     width: fit-content;
+     display:flex;
+     flex-wrap: wrap;
+}
+
+.body_image,
+.body_text{
+    flex : 1 1 50%;
+    box-sizing: border-box;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+}
+
+#main_note_text{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+#note{
+    border: 1px solid;
+    text-align: center;
+    width: 700px;
+    font-weight: 700;
 }
 
 .body_text h1,
@@ -151,27 +205,6 @@ li{
 .body_cards_button a{
     color: white;
     font-weight: 600;
-}
-
-.body_text h1{
-        font-size: 70px;
-        text-align: center;
-}
-
-.sub_text p{
-    font-size: 20px;
-    text-align: center;
-}
-
-.sub_text{
-    width: 1000px;
-}
-
-.body_cards_button{
-    border: 3px solid white ;
-    padding: 10px;
-    border-radius:50px;
-    text-align: center;
 }
 
 .peach_card {
@@ -204,18 +237,32 @@ li{
     background-color: darkgreen;
 }
 
-#main_note_text{
-    display: flex;
-    padding: 100px;
-    width : 100% ;
-    border-bottom: 2px solid gray;
-    justify-content: center;
-    align-items: center;
+.light_green_card .body_cards_button,
+.dim_green_card .body_cards_button,
+.navy_green_card .body_cards_button{
+    border-color: white;
 }
 
-#main_note_text p{
-    font-weight: 700;
-    color: rgb(2, 58, 2);
-    width: 860px;
-    text-align: center;
+/* footer */
+
+#footer{
+     border: 1px solid;
+     display: flex;
+     gap: 25px;
+     flex-wrap: wrap;
+}
+
+.footer_list{
+    border: 1px solid;
+    width: fit-content;
+    margin-left: 25px;
+}
+
+.footer_list li{
+    padding: 10px 10px 10px 0px ;
+}
+
+.footer_list a{
+    color: gray;
+    font-size: 20px;
 }

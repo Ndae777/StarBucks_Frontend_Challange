@@ -1,0 +1,296 @@
+About Us
+Our Company
+Our Coffee
+About Starbucks
+Starbucks Archive
+Investor Relations
+Customer Service
+Contact Us
+
+
+Careers
+Culture and Values
+Belonging at Starbucks
+College Achievement Plan
+Alumni Community
+U.S. Careers
+International Careers
+
+
+Social Impact
+Communities
+Starbucks Foundation
+Sustainability
+Environmental and Social Impact Reporting
+
+
+For Business Partners
+Landlord Support Center
+Suppliers
+Corporate Gift Card Sales
+Office and Foodservice Coffee
+
+
+Order and Pick Up
+Order on the App
+Order on the Web
+Delivery
+Order and Pick Up Options
+Explore and Find Coffee for Home
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* * {
+      border: 2px solid red ;  
+}  */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+
+}
+
+
+/* header */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#header{
+    display: flex;
+    border-bottom: 2px solid gray ;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#header_menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    height:60px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+    font-weight: 700;
+}
+
+#top_nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#location_nav{
+    display: flex;
+    margin-left: 30%;
+}
+
+#location_icon {
+    height: 40px;
+    padding: 8px;
+    margin-top: 13px;
+}
+
+#nav_store{
+    padding: 10px 3px 10px;
+}
+
+#buttons{
+    display: flex;
+    gap: 10px;
+}
+
+#button_sign_in,
+#button_join_now{
+    padding: 15px;
+    border : 2px solid;
+    border-radius: 50px;
+}
+
+#button_join_now{
+    background-color: black;
+}
+
+#sign_in,
+#join_now{
+    font-weight: bold ;
+}
+
+#join_now{
+    color: white;
+}
+
+.highlight:hover{
+    color:green;
+}
+
+#button_sign_in:hover {
+    background-color: rgb(188, 186, 186);
+}
+
+#button_join_now:hover{
+    background-color: rgb(33, 33, 33);
+}
+
+/* main */
+
+#main{
+    width: 100%;
+}
+
+.body_cards{
+    display: flex;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.body_cards div{
+    width: 50%;
+    border: 1px solid red;
+}
+
+
+.body_image{
+    height:100%;
+    width: 100%;
+}
+
+.body_text{
+    background-color: rgb(32, 67, 32);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+}
+
+.body_text h1,
+.sub_text p,
+.body_cards_button a{
+    color: white;
+    font-weight: 600;
+
+
+}
+
+.body_text h1{
+        font-size: 70px;
+        text-align: center;
+}
+
+.sub_text p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.sub_text{
+    width: 1000px;
+}
+
+.body_cards_button{
+    border: 3px solid white ;
+    padding: 10px;
+    border-radius:50px;
+    text-align: center;
+}
+
+.peach_card {
+    background-color: peachpuff;
+}
+
+.peach_card h1 ,
+.peach_card  p,
+.peach_card .body_cards_button a,
+.light_green_card h1 ,
+.light_green_card  p,
+.light_green_card .body_cards_button a  {
+    color:rgb(32, 67, 32);
+}
+
+.peach_card .body_cards_button,
+.light_green_card .body_cards_button{
+    border-color: rgb(32, 67, 32) ;
+}
+
+.light_green_card {
+    background-color: rgb(176, 215, 176);
+}
+
+.dim_green_card{
+     background-color: rgb(5, 37, 5);
+}
+
+.navy_green_card{
+    background-color: darkgreen;
+}
+
+#main_note_text{
+    display: flex;
+    padding: 100px;
+    width : 100% ;
+    border-bottom: 2px solid gray;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_note_text p{
+    font-weight: 700;
+    color: rgb(2, 58, 2);
+    width: 860px;
+    text-align: center;
+}
+
+/* footer section */
+
+#footer{
+    padding: 20px;
+    padding-left: 150px;
+    display: flex;
+}
+
+.footer_list{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-right: 26px ;
+}
+
+.footer_list h2{
+    margin-bottom: 30px;
+}
+
+.footer_list a{
+    color: gray;
+}
+
+.footer_list a:hover{
+    color: black;
+}
+
+
+.footer_list ul{
+    padding:0;
+    margin:0;
+}
